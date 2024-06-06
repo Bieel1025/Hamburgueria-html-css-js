@@ -141,7 +141,7 @@ addressInput.addEventListener("input", function(event){
 // Finalizar pedido
 checkoutBtn.addEventListener("click", function(){
 
-    const isOpen = checkRestaurantOpen()
+    // const isOpen = checkRestaurantOpen()
     // if(!isOpen){
         
     //     Toastify({
@@ -157,8 +157,8 @@ checkoutBtn.addEventListener("click", function(){
     //     }).showToast()
 
 
-        return
-    }
+    //     return
+    // }
 
 
     if(cart.length === 0) return
