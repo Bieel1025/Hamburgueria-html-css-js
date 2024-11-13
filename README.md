@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/9f2eca38-fc32-471b-9526-0131e838de74)Link da página no google com Vercel: hamburgueria-html-css-js.vercel.app
+Link da página no google com Vercel: hamburgueria-html-css-js.vercel.app
 ![image](https://github.com/user-attachments/assets/fa5edcb6-3375-4d02-a34b-2ef0c1e2949e)
 
 1- Página feita com fins de aprendizado
