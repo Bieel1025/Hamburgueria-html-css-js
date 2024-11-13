@@ -49,6 +49,7 @@ function addToCart(name, price){
 
     if(existingItem){
      existingItem.quantity += 1
+     cartCounter.innerHTML++
 
     } else {
         cart.push({
@@ -56,6 +57,8 @@ function addToCart(name, price){
         price,
         quantity: 1,
         })
+        cartCounter.innerHTML++
+        existingItem.quantity += 1
     }
 
     updateCartModal()
@@ -90,6 +93,9 @@ function updateCartModal(){
 
         cartItemsContainer.appendChild(cartItemElement)
 
+        // quantityTotal = item.quantity + item.quantity
+        // cartCounter.innerHTML = quantityTotal
+
     })
 
     cartTotal.textContent = total.toLocaleString("pt-br", {
@@ -97,7 +103,7 @@ function updateCartModal(){
         currency: "BRL"
     })
 
-    cartCounter.innerHTML = cart.length
+    
 
 }
 
@@ -106,6 +112,7 @@ function updateCartModal(){
 cartItemsContainer.addEventListener("click", function(event){
     if(event.target.classList.contains("remove-from-cart-btn")){
         const name = event.target.getAttribute("data-name")
+
 
         removeItemCart(name)
     }
@@ -116,7 +123,7 @@ function removeItemCart(name){
     
     if(index !== -1){
         const item = cart[index]
-
+        cartCounter.innerHTML--
         if(item.quantity > 1){
             item.quantity -= 1
             updateCartModal()
